@@ -9,7 +9,7 @@ public class Scoring : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(score);
+        
     }
 
     public void Review()
