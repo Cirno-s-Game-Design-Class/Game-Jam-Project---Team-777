@@ -15,12 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelect.unity
     guid: 555fcaadc99550c4bb347c799b9da2af
   - enabled: 1
-    path: Assets/Scenes/EmailScene.unity
+    path: Assets/Scenes/OldEmailScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/MeetingScene.unity
     guid: 5779f5223a255854eb3c7e858686330d
   - enabled: 1
-    path: Assets/Scenes/WorkScene.unity
+    path: Assets/Scenes/OldWorkScene.unity
     guid: 3958b6e77e696a64f84618ec43dc28f1
   m_configObjects: {}
