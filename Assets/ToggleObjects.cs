@@ -3,9 +3,18 @@ using UnityEngine.UI; // Required for manipulating UI components like buttons
 
 public class ToggleObjects : MonoBehaviour
 {
+    public Button exit;
     public GameObject[] objectsToToggle; // Array of objects to toggle
     public Button[] buttons; // Corresponding buttons for each object
     private int lastSelectedIndex = -1; // Index of the last selected object
+
+    private void Update()
+    {
+        if (GameManager.emailsCount == 3)
+        {
+            exit.interactable = true;
+        }
+    }
 
     // Method to show only one object and hide others
     public void ShowOnlyObject(int index)
@@ -22,6 +31,7 @@ public class ToggleObjects : MonoBehaviour
     {
         if (lastSelectedIndex != -1 && lastSelectedIndex < buttons.Length)
         {
+            GameManager.emailsCount++;
             Debug.Log("Disabling object at index: " + lastSelectedIndex);
             objectsToToggle[lastSelectedIndex].SetActive(false);
             buttons[lastSelectedIndex].interactable = false;
