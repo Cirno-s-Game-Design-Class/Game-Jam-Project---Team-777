@@ -1,18 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using TMPro; // Add this namespace to use TextMesh Pro components
+using System.Linq;
 
 public class TextInputControl : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public TMP_InputField inputField; // Change to TMP_InputField
+    public TextMeshProUGUI wordLimitText; // Change to TextMeshProUGUI
+    public int maxWordCount = 50;
+
     void Start()
     {
-        
+        inputField.onValueChanged.AddListener(DelegateMethod);
+        UpdateWordCount();
     }
 
-    // Update is called once per frame
-    void Update()
+    void DelegateMethod(string input)
     {
-        
+        UpdateWordCount();
+    }
+
+    void UpdateWordCount()
+    {
+        int wordCount = inputField.text.Split(new char[] { ' ', '\n' }, System.StringSplitOptions.RemoveEmptyEntries).Length;
+        wordLimitText.text = wordCount + "/" + maxWordCount;
+
+        if (wordCount >= maxWordCount)
+        {
+            inputField.text = string.Join(" ", inputField.text.Split(new char[] { ' ', '\n' }, System.StringSplitOptions.RemoveEmptyEntries).Take(maxWordCount));
+        }
     }
 }
