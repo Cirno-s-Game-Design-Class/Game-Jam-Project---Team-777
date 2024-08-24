@@ -2,44 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TextInputCheck : MonoBehaviour
 {
-    public List<TMP_InputField> answerFields;
+    public TMP_InputField text;
+    public Button sendButton;
+    public int minimumWordCount;
 
-    private void Start()
+    private void Update()
     {
-        answerFields = new List<TMP_InputField>(FindObjectsOfType<TMP_InputField>());
-        foreach (var field in answerFields)
+        int wordCount = GetWordCount(text.text);
+        if (wordCount >= minimumWordCount)
         {
-            if (field.tag != "Answer Field")
-            {
-                answerFields.Remove(field);
-            }
+            sendButton.interactable = true;
         }
     }
 
-    public void Lock()
+    int GetWordCount(string text)
     {
-        StartCoroutine(SelectDelay());
-    }
-
-    public void Unlock()
-    {
-        foreach (var field in answerFields)
+        if (string.IsNullOrWhiteSpace(text))
         {
-            field.interactable = true;
+            return 0;
         }
+        string[] words = text.Split(new char[] { ' ', '\n', '\r' }, System.StringSplitOptions.RemoveEmptyEntries);
+        return words.Length;
     }
-
-    IEnumerator SelectDelay()
+    public void FinishEmail()
     {
-        yield return new WaitForEndOfFrame(); foreach (var field in answerFields)
-        {
-            if (!field.isFocused)
-            {
-                field.interactable = false;
-            }
-        }
+        GameManager.emailsCount++;
     }
 }
