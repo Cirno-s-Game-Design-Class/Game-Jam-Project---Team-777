@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     public static int emailsCount = 0;
-    public static bool bossTranscript = false;
+    public static bool meetingDone = false;
 
     private void Awake()
     {
