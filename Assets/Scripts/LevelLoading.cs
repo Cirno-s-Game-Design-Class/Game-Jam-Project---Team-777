@@ -7,14 +7,21 @@ public class LevelLoading : MonoBehaviour
 {
     public Animator transition;
     public float loadDelay = 1f;
-    void Update()
+    public int specificScene = -1;
+
+    private void Start()
     {
+        if (gameObject.name == "Crossfade")
+            transition = GetComponent<Animator>();
         
     }
 
     public void LoadNext()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        if (specificScene != -1)
+            StartCoroutine(LoadLevel(specificScene));
+        else
+            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
     IEnumerator LoadLevel(int index)
