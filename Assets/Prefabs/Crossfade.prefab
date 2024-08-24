@@ -55,6 +55,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 8348700614958548749}
   loadDelay: 1
+  specificScene: -1
 --- !u!223 &2878659421809115417
 Canvas:
   m_ObjectHideFlags: 0
@@ -76,7 +77,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &9210429770137050841
 MonoBehaviour:

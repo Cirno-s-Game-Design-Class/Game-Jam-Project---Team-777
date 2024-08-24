@@ -17,7 +17,7 @@ public class Timer : MonoBehaviour
 
     private void Start()
     {
-        transition = GetComponent<Animator>();
+        transition = GetComponentInChildren<Animator>();
         countdown = timeInSeconds;
         StartCoroutine(TimerFade());
     }

@@ -5,10 +5,6 @@ using UnityEngine.UI;
 
 public class ChoiceCheck : MonoBehaviour
 {
-    public Toggle A;
-    public Toggle B;
-    public Toggle C;
-    public Toggle D;
     public Toggle correctAnswer;
 
     bool scoreCheckDone;
