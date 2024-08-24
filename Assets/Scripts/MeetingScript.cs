@@ -48,20 +48,14 @@ public class MeetingScript : MonoBehaviour
         {
             Debug.Log("yy");
             corrects++;
-            for(int i = 0; i < answers.Length; i++)
-            {
-                answers[i].interactable = true;
-            }
+            StartCoroutine(ResetButtons());
         }
 
         if (Choice == correctAnswer[1] && corrects == 1)
         {
             Debug.Log("yy");
             corrects++;
-            for (int i = 0;i < answers.Length;i++)
-            {
-                answers[i].interactable = true;
-            }
+            StartCoroutine(ResetButtons());
         }
 
         if (Choice == correctAnswer[2] && corrects == 2)
@@ -87,6 +81,15 @@ public class MeetingScript : MonoBehaviour
             bubbleThree.color = Color.white;
             dotdotdot[1].SetActive(false);
             correctSprites[2].enabled = true;
+        }
+    }
+
+    IEnumerator ResetButtons()
+    {
+        yield return new WaitForEndOfFrame();
+        for (int i = 0; i < answers.Length; i++)
+        {
+            answers[i].interactable = true;
         }
     }
 }
