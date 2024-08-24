@@ -26,6 +26,6 @@ public class LevelLoader : MonoBehaviour
     {
         transition.SetTrigger("BeginFade");
         yield return new WaitForSeconds(loadDelay);
-        SceneManager.LoadScene(index);  
+        SceneManager.LoadScene(index);
     }
 }

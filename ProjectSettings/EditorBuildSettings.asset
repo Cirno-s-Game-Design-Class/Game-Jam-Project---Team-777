@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MeetingScene.unity
     guid: 5779f5223a255854eb3c7e858686330d
+  - enabled: 1
+    path: Assets/Scenes/WorkScene.unity
+    guid: 3958b6e77e696a64f84618ec43dc28f1
   m_configObjects: {}
