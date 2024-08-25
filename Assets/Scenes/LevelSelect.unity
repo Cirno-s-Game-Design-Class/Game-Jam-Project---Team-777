@@ -395,6 +395,55 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &188632195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 188632197}
+  - component: {fileID: 188632196}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &188632196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188632195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c14dfd0bcc6696f48a4db442986113ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emailButton: {fileID: 569597017}
+  emailCheckButton: {fileID: 2119714093}
+  emailCheckBoxButton: {fileID: -159323437, guid: cd9b8cc87dac1bf45a21c6005012df5c, type: 3}
+  meetingButton: {fileID: 277120722}
+  meetingCheckButton: {fileID: 2104929125}
+--- !u!4 &188632197
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188632195}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -431.75012, y: 446.47467, z: -16.211998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &227797659
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,7 +656,7 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: -2096717154, guid: 7d93bd38d2f8d4c4db82f966caa890b2, type: 3}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 443416994, guid: b512d0871f006ee47a99e1aa1d74c8eb, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -1036,7 +1085,7 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: -2096717154, guid: 7d93bd38d2f8d4c4db82f966caa890b2, type: 3}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 443416994, guid: b512d0871f006ee47a99e1aa1d74c8eb, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -1708,9 +1757,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e82ac7436db2a41aba4ee46dfdbb08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tickedBox: {fileID: 1048369304}
-  emailBox: {fileID: 2119714095}
-  meetingBox: {fileID: 2104929127}
 --- !u!4 &1727958031
 Transform:
   m_ObjectHideFlags: 0
@@ -2013,3 +2059,4 @@ SceneRoots:
   - {fileID: 86090344}
   - {fileID: 7666392269397183041}
   - {fileID: 1727958031}
+  - {fileID: 188632197}
