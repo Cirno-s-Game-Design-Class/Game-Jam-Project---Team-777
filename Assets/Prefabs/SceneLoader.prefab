@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a2e3851b2cde144aebc9f2cb8176c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transition: {fileID: 0}
+  transition: {fileID: 1727400535388557496}
   loadDelay: 1
   specificScene: 0
 --- !u!95 &1727400535388557496

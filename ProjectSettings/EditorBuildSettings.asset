@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DontDestroyOnLoad.unity
-    guid: e52436876838a464f9716241089c92c0
-  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 7f57f56372c97b84ea640df9d6143703
   - enabled: 1
@@ -21,6 +18,24 @@ EditorBuildSettings:
     path: Assets/Scenes/MeetingScene.unity
     guid: 5779f5223a255854eb3c7e858686330d
   - enabled: 1
-    path: Assets/Scenes/OldWorkScene.unity
-    guid: 3958b6e77e696a64f84618ec43dc28f1
+    path: Assets/Scenes/WorkScene1.unity
+    guid: 295fc2b985f056748b488c7d963b8aa2
+  - enabled: 1
+    path: Assets/Scenes/WorkScene2.unity
+    guid: 248339affa7751f49819030ba317f08b
+  - enabled: 1
+    path: Assets/Scenes/CutScene1.unity
+    guid: 08be9698e3c499f418a3d1d828ace08f
+  - enabled: 1
+    path: Assets/Scenes/CutScene2.unity
+    guid: afd8c7bf199362440bfbb11ae8aa1801
+  - enabled: 1
+    path: Assets/Scenes/CoffeeScene.unity
+    guid: 0e9af63ae68589e48b9730e459540769
+  - enabled: 1
+    path: Assets/Scenes/PC Flash.unity
+    guid: 798cf48619389594aa40fd6b9de30738
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 81516d54381a3ba4898cff4089c09df4
   m_configObjects: {}

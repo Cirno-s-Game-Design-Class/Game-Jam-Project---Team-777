@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public static int emailsCount = 0;
     public static bool emailsTaskCompleted = false;
     public static bool meetingDone = false;
+    public static bool workDone = false;
 
     private void Awake()
     {

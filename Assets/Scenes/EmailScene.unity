@@ -794,7 +794,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2095,7 +2095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ced1906537d5434fa72d5adc5962b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exit: {fileID: 0}
+  exit: {fileID: 278449617}
   objectsToToggle:
   - {fileID: 1680592629}
   - {fileID: 1887530300}
@@ -2104,7 +2104,7 @@ MonoBehaviour:
   - {fileID: 226933700}
   - {fileID: 704570329}
   - {fileID: 1941201525}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 1097266440}
 --- !u!4 &739428178
 Transform:
   m_ObjectHideFlags: 0
@@ -3147,6 +3147,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996704041}
   m_CullTransparentMesh: 1
+--- !u!114 &1097266440 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3759225259906375794, guid: 253b17bcb5026d2468ac1806a92aedde, type: 3}
+  m_PrefabInstance: {fileID: 194877671}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934ba97291fd31f4298a7e4dbd1800d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1110358945
 GameObject:
   m_ObjectHideFlags: 0
